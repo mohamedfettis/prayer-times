@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 28px;
+    color: #C97D3E;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    background: #C97D3E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+
+}
+
+button:hover {
+    background: #ff811a;
+    transition: 0.3s ease;
+}
+
+.prayer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.prayer-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-card h3 {
+    font-size: 20px;
+    color: #C97D3E;
+    margin-bottom: 10px;
+}
+
+.prayer-card .time {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .prayer-card {
+        width: 100%;
+    }
+    button{
+        margin-top: 1.5rem;
+
+    }
+}
+
+
+.prayer-card .remaining-time {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.prayer-card .icon img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    transition: 0.5s ease;
+    
+}
+.prayer-card .icon img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+section{
+    margin-top: 4rem;
+}
+
+footer {
+    background-color: #fff; /* Couleur de fond sombre */
+    color: #222; /* Texte blanc */
+    text-align: center; /* Alignement centré */
+    padding: 15px 10px; /* Espacement intérieur */
+    font-size: 14px; /* Taille de texte */
+    border-top: 2px solid #f9f9f9; /* Ligne supérieure pour un style élégant */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+footer a {
+    color: #C97D3E; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold; /* Texte en gras */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+

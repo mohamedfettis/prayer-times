@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Find accurate Muslim prayer times and Islamic prayer schedules for your city. Stay updated with Adhan reminders and Qibla directions.">
+    <meta name="keywords" content="Prayer times, Muslim prayers, Salat times, Islamic schedule, Adhan reminder">
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Prayer Times </title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="info">
+            <div class="info-left">
+                <h1>Prayer Times</h1>
+                <p id="city">City: <span id="timezone"></span></p>
+                <p id="date">Date: <span id="date"></span></p>
+            </div>
+            <div class="info-right">
+                <input type="text" id="city-input" placeholder="Enter your city">
+                <button id="get-times">Get Prayer Times</button>
+            </div>
+        </div>
+        <section class="prayer-cards">
+            <!-- Carte pour Sobah -->
+            <div class="prayer-card" id="sobah">
+                <h3>Fajr</h3>
+                <p id="sobah-time">05:45</p>
+                <p id="sobah-remaining-time">Temps restant : 1h 15m</p>
+                <div class="icon">
+                    <img src="./imgs/fajr.png" alt="fajr image">
+                </div>
+            </div>
+
+            <!-- Carte pour Dhuhr -->
+            <div class="prayer-card" id="dhuhr">
+                <h3>Dhuhr</h3>
+                <p id="dhuhr-time">12:15</p>
+                <p id="dhuhr-remaining-time">Temps restant : 6h 30m</p>
+                <div class="icon">
+                    <img src="./imgs/duhrh.png" alt="Dhuhr Icon">
+                </div>
+            </div>
+
+            <!-- Carte pour Asr -->
+            <div class="prayer-card" id="asr">
+                <h3>Asr</h3>
+                <p id="asr-time">15:30</p>
+                <p id="asr-remaining-time">Temps restant : 9h 45m</p>
+                <div class="icon">
+                    <img src="./imgs/asr.png" alt="Asr Icon">
+                </div>
+            </div>
+
+            <!-- Carte pour Maghrib -->
+            <div class="prayer-card" id="maghrib">
+                <h3>Maghrib</h3>
+                <p id="maghrib-time">18:45</p>
+                <p id="maghrib-remaining-time">Temps restant : 12h 10m</p>
+                <div class="icon">
+                    <img src="./imgs/maghreb.png" alt="Maghrib Icon">
+                </div>
+            </div>
+
+            <!-- Carte pour Isha -->
+            <div class="prayer-card" id="isha">
+                <h3>Isha</h3>
+                <p id="isha-time">20:15</p>
+                <p id="isha-remaining-time">Temps restant : 13h 40m</p>
+                <div class="icon">
+                    <img src="./imgs/icha.png" alt="Isha Icon">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="now-year"></span> Prayer Muslim. Website created by <a href="mailto:example@example.com">Mohamed Amokrane Fettis</a>. All rights reserved.</p>
+    </footer>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./script.js" ></script>
+
+    
+</body>
+</html>
